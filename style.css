@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    position: relative;
+    /* height: 100vh; */
+    height: 500px;
+    width: 100%;
+    background-color: #000;
+    overflow: hidden;
+}
+ .bg .cloud{
+    position: absolute;
+    background-image: url(img/cloud.png);
+    background-repeat: repeat-x;
+    /* animation: animate 76s ease-in-out infinite; */
+    animation: animate 60s linear infinite;
+    background-size: auto 80px;
+    top: 133px;
+    width: 10000px;
+    height: 173px;
+ }
+ .bg .building{
+    position: absolute;
+    background-image: url(img/building.png);
+    background-repeat: repeat-x;
+    animation: animate 50s linear infinite;
+    background-size: auto 300px;
+    left: -10;
+    bottom: 0;
+    width: 10000px;
+    height: 360px;
+}
+ .bg .lamp{
+    position: absolute;
+    /* background-image: url(img/lamp.png); */
+    background-image: url(img/city-lamp.png);
+    background-repeat: repeat-x;
+    animation: animate 20s linear infinite;
+    background-size: auto 140px;
+    left: -10;
+    bottom: 0;
+    width: 10000px;
+    height: 202px;
+}
+/* .bg .city-board{
+    position: absolute;
+    background-image: url(img/city-board.png);
+    background-repeat: repeat-x;
+    animation: animate 300s linear infinite;
+    background-size: auto 140px;
+    left: -10;
+    bottom: 0;
+    width: 10000vh;
+    height: 202px;
+} */
+.bg .track{
+    position: absolute;
+    bottom: 0px;
+    width: 10000px;
+    height: 60px;
+    background-image: url(img/track.png);
+    background-repeat: repeat-x;
+    background-size: auto 40px;
+    animation: animate linear 26s infinite;
+}
+.bg .truck{
+    position: absolute;
+    bottom: 30px;
+    left: 38%;
+    width: 300px;
+}
+@keyframes animate{
+    from{
+        background-position: 100% 0;
+    }
+    to{
+        background-position: 0 0;
+    }
+}
+@keyframes city{
+    from{
+        left: 100px;
+    }
+    to{
+        left: 100%;
+    }
+}
